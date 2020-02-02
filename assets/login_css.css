@@ -1,0 +1,44 @@
+.header{
+    text-align: center;
+    height: auto;
+    font-size: large;
+    font-weight: bold;
+    box-sizing: content-box;
+    box-shadow: 2px 2px 4px 4px rgba(97,98,97,0.12);
+    margin-bottom: 1%;
+    align-items: center;
+    align-content: center;
+}
+.login_form{
+    color: aliceblue;
+    background-color: rgba(14,114,50,0.4);
+    height: auto;
+    width: 40%;
+    text-align: center;
+    padding: 1%;
+    margin-left: 30%;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.04);
+}
+input:not([type=submit]){
+    box-shadow: 2px 2px 4px 4px rgba(192,231,132,0.04);
+    box-sizing: border-box;
+    width: 40%;
+ }
+input[type=submit]{
+    font-weight: bold;
+    background-color: aquamarine;
+    border-radius: 2px;
+    width: 20%;
+    height: 20%;
+    padding: 5px;
+    border: 2px aquamarine;
+}
+.create_user_button{
+    background-color: aquamarine;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    margin-left: 25%;
+
+}

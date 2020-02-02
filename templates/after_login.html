@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome {{ name.first_name }}</title>
+    <link rel="stylesheet" href="{% static 'After_Login.css' %}" type="text/css">
+</head>
+<body>
+<div class="header">
+Welcome to Leave Management System
+</div>
+
+<div class="user_data">
+    <div class="text1">USER DETAILS</div>
+    <div class="d">
+        <div class="titles">User Name:</div>{{ name.username}}<br>
+    </div>
+    <div class="d">
+        <div class="titles">First Name:</div>{{ name.first_name}}<br>
+    </div>
+    <div class="d">
+        <div class="titles">Last Name:</div>{{ name.last_name}}<br>
+    </div>
+    <div class="d">
+        <div class="titles">Email:</div>{{ name.email}}<br>
+    </div>
+    <div class="d">
+        <div class="titles">Last Login:</div>{{ name.last_login}}<br>
+    </div>
+</div>
+<div class="options_main">
+    <div class="op_1">
+        <div style="background: #5b80b2;font-size: large;border: #003366" >Leaves</div>
+        Annual Leaves : {{ leaves.TOTAL_ANNUAL_LEAVES }}<br>
+        Sick Leaves : {{ leaves.TOTAL_SICK_LEAVES }}<br>
+        Work From Home Days : {{ leaves.TOTAL_WFH }}<br>
+    </div>
+    <div class="op_2">
+        Requests/Status
+    </div>
+    <div class="op_3">
+        Account Details
+    </div>
+
+</div>
+</body>
+</html>

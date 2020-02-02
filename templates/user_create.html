@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <script>
+        {% for msg in messages %}
+        alert("{{ msg }}")
+        {% endfor %}
+    </script>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'user_create.css' %}" type="text/css">
+</head>
+<body>
+<div class="header">
+    <h1>Welcome to the Leave Management System</h1>
+</div>
+<div class="login_form">
+    <h2>Sign Up</h2>
+    <img src="{% static 'login_logo.jpg'%}" width="25%" height="100%">
+    <form method="post" action="create">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit">
+    </form>
+
+
+</div>
+</body>
+</html>
